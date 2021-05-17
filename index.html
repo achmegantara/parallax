@@ -18,14 +18,12 @@
         </ul>
     </header>
     <section>
-        <img src="/img-src/stars.png" id="stars">
+        <img src="/img/stars.png" id="stars">
         <h2 id="text">Achmad Megantara</h2>
-        <a href="#sec" id="btn">Explore</a>
-        <img src="/img-src/small_moon.png" id="small_moon">
-        <img src="/img-src/medium_moon.png" id="medium_moon">
-        <img src="/img-src/big_moon.png" id="big_moon">
-        <img src="/img-src/small_hill.png" id="small_hill">
-        <img src="/img-src/big_hill.png" id="big_hill">
+        <a href="#sec" id="btn">Find Me</a>
+        <img src="/img/big-hill-new.png" id="big_hill">
+        <img src="/img/small-hill-new.png" id="small_hill">
+        <img src="/img/moon-new.png" id="moon">
     </section>
     <div class="sec" id="sec">
         <h2>
@@ -45,11 +43,10 @@
         </p>
     </div>
 
+    
     <script>
         let stars = document.getElementById('stars');
-        let small_moon = document.getElementById('small_moon');
-        let medium_moon = document.getElementById('medium_moon');
-        let big_moon = document.getElementById('big_moon');
+        let moon = document.getElementById('moon')
         let small_hill = document.getElementById('small_hill');
         let big_hill = document.getElementById('big_hill');
         let btn = document.getElementById('btn');
@@ -58,14 +55,13 @@
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
             stars.style.left = value * 0.25 + 'px';
-            small_moon.style.top = value * 0.5 + 'px';
-            medium_moon.style.top = value * 0.5 + 'px';
-            big_moon.style.top = value * 0.5 + 'px';
-            small_hill.style.top = value * 0.5 + 'px';
+            moon.style.top = value * 1.05 + 'px';
             big_hill.style.top = value * 0.5 + 'px';
-            text.style.marginLeft = value * 0.5 + 'px';
-            text.style.marginTop = value * 4 + 'px';
-            header.style.top = value * 4 + 'px';
+            small_hill.style.top = value * 0.5 + 'px';
+            text.style.marginLeft = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
         })
     </script>
 
